@@ -1,95 +1,41 @@
-*{
-    font-family: 'Times New Roman', Times, serif;
-    font-weight: 0.2;
-    font-style: oblique;
-    font-variant: small-caps;
-}
-
-body{
-    background-color: beige;
-}
 header{
-    background-color: antiquewhite;
-    border: 0.5;
-    border-style: dashed;
-    border-radius: 4%;
-    
-    a{
-        border: 0.01;
-        border-style: solid;
-        border-color: black;
-        background-color: rgb(255, 255, 255);
-
-    }
+    text-align: center;
 }
 
-#definicion{
-    h4{
-        font-family: 'Times New Roman', Times, serif;
-        font-weight: 0.2;
-        font-style: oblique;
-    }
-}
+#caja1{
 
-#ventajas{
-    h4{
-        font-family: 'Times New Roman', Times, serif;
-        font-weight: 0.2;
-        font-style: oblique;
-    }
-}
-
-#desventajas{
-    h4{
-        font-family: 'Times New Roman', Times, serif;
-        font-weight: 0.2;
-        font-style: oblique;
-    }
-}
-
-#tipos{
-    dl{
-        background-color: white;
-        border: 0.2;
-        border-color: black;
-        border-style: ridge;
-    }
-}
-
-#audio{
-    Audio{
-        background-color: black;
-    }
-}
-
-#pagina{
-    background-color: coral;
+    width: 30%;
     border: 1;
-    border-color: black;
-    border-style: double;
-    h2{
-        background-color: white;
+    border-style: solid;
+    border-radius: 2%;
+    display: inline-block;
+
+    main{
+        background-color: bisque;
+
+        h2{
+            text-align: center;
+            font-style: oblique;
+            height: 100%;
+        }
     }
-}
+    
 
-#tablas{
-    table{
-        background-color: white;
-    }
-}
+    
+    article{
+        img{
+            width: 99%;
+            border-bottom: .1;
+            border-top: .1;
+            border-style: solid;
+        }
 
-footer{
-    form{
-        border: .01;
-        border-color: black;
-        border-style: dashed;
-        background-color: rgb(219, 218, 218);
-
-        fieldset select optgroup{
-                background-color: bisque;
+        p{
+            display: inline;
+            font-style: oblique;
+            font-size: x-large;
         }
         
     }
-    
     
 }
