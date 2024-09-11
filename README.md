@@ -9,7 +9,7 @@ HTML:
 
 HTML Y CSS:
 
-1. [Ejercicio #1 - Formato de texto, fuentes, fondos y border](/04_Trabajo_HTML/index.html)
+#1. [Ejercicio #1 - Formato de texto, fuentes, fondos y border](/04_Trabajo_HTML/index.html)
 2. [Ejercicio #2 - Tarjeta](/05_Trabajo_HTML_CSS/index.html)
    
    
