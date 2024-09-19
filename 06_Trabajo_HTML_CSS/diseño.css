@@ -1,8 +1,11 @@
 body{
     background-color: whitesmoke;
+    margin: 0;
+    font-family: 'Roboto', 'Times New Roman', Times, serif;
 }
 
 header{
+    margin: 0;
     top: 0;
     display: flex;
     width: 100%;
@@ -13,7 +16,7 @@ header{
     align-items: center;
     justify-content: space-between;
     background-color: rgb(250, 241, 230);
-    font-family: 'Roboto', 'Times New Roman', Times, serif;
+    font-family: auto;
     
 }
 #caja_logo{
@@ -21,7 +24,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    width: 33%;
+    width: 20%;
     height: 6vw;
     padding-left: 10px;
     h1{
@@ -37,29 +40,53 @@ header{
 #caja_texto{
     display: flex;
     align-items: center;
-    justify-content: center;
-    width: 33%;
+    justify-content: space-around;
+    width: 60%;
     height: 6vw;
     text-align: center;
-    padding-left: 5%;
-        h1{
-            font-size: 5vw;
-            margin: 0;   
+    
+        
+    #categorias{
+        display: inline-block;
+        width: 33%;
+        .op1{
+            font-size: 1.5vw;
+            margin: 0;
         }
+    }
+
+    #crear{
+        display: inline-block;
+        width: 33%;
+        .op2{
+            font-size: 1.5vw;
+            margin: 0;
+        }
+    }
+
+    #editar{
+        display: inline-block;
+        width: 33%;
+        .op3{
+            font-size: 1.5vw;
+            margin: 0;
+        }
+    }
         
 }
     
 #caja_menu{
     /*background-color: rgb(231, 95, 95);*/
+
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    width: 33%;
+    width: 20%;
     height: 6vw;
     text-align: right;
-    padding-right: 20px;
+    padding-right: 80px;
     #menu{
-        width: 9%;
+        width: 12%;
         height:auto;
         cursor: pointer;
         border-radius: 4px;
@@ -76,9 +103,32 @@ header{
         
     }
 
+    .input{
+        border-radius: 10px;
+        border-color: black;
+        border-style: solid;
+        background-color: black;
+        color: white;
+        padding-left: 5%;
+        width: 70%;
+        height: 1.4vw;
+        font-family: auto;
+    }
+
+    .input::placeholder{
+        color: white;
+        font-size: 0.9vw;
+        font-family: auto;
+    }
+    
+
     #menu:hover{
         border: 2px;
         border-style: outset;
         border-color: black;
+    }
+
+    #menu:active{
+        background-color: rgb(177, 177, 177);
     }
 }
