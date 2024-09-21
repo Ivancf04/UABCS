@@ -23,9 +23,99 @@
         <!-- <div id="caja_menu"><button id="menu"><img src="images/menu.png" alt="menu"></button></div> -->
 
         <div id="caja_menu">
-            <input class="input" type="text" placeholder="buscar...">
+            <input class="input" type="text" placeholder="Buscar...">
         </div>
         
     </header>
+    <main>
+        <h1 class="titulo">¿Que es la mineria?</h1>
+
+        <h2 class="subtitulo1">¿Que son los minerales?</h2>
+
+        <h3 class="texto1">Los minerales son elementos formados por la naturaleza, es decir que no son fabricados. Son sustancias inorgánicas porque no tienen vida y nunca la tendrán. Los minerales son sólidos, por eso los líquidos y los gases no son considerados minerales. <br> Están compuestos de uno o varios elementos químicos y algunos minerales se encuentran en el suelo, mientras que otros se encuentran dentro de las capas internas de nuestro planeta.</h3>
+
+        <h2 class="subtitulo2">¿Como surge la actividad minera?</h2>
+
+        <h3 class="texto2">Como ya lo vimos, los minerales se encuentran en la naturaleza, muchas veces mezclados con otros, formando rocas. A estas rocas que tienen minerales dentro se les llaman vetas, las cuales han sido usadas por el hombre durante cientos de años, sacando de ahí los minerales para fabricar herramientas, máquinas y toda clase de elementos que usamos durante nuestra vida. La actividad minera comenzó precisamente sacando minerales de estas vetas para poder construir cualquier elemento.</h3>
+    </main>
+    <footer>
+        <form action = "05_Trabajo_HTML_CSS/index.html" method = "get">
+
+            <div class="seccion_header">
+                <label class="label_titulo">Formulario de contacto</label>
+            </div>
+             
+            <div class="seccion_contenido">
+                <div class="bloque_nombre">
+                    <label class="label_nombre">Ingresa tu nombre: </label>
+                    <input class="input_nombre" type = "text" name = "nombre" required>
+                </div>
+                
+                <div class="bloque_correo">
+                    <label class="label_correo">Ingresa tu correo: </label>
+                    <input class="input_correo" type = "email" name = "correo" required>
+                </div>
+    
+                <div class="bloque_number">
+                    <label class="label_number">Ingresa tu numero: </label>
+                    <input class="input_number" type = "number" name = "correo" required>
+                </div>
+            
+                <div class="bloque_estado">
+                    <label class="label_estados">Ingresa el estado el que vives: </label>
+                    <select class="select_estados" name="estados-mexico">
+                        <optgroup label="Norte">
+                            <option value="Aguascalientes">Aguascalientes</option>
+                            <option value="Baja California">Baja California</option>
+                            <option value="Baja California Sur">Baja California Sur</option>
+                            <option value="Chihuahua">Chihuahua</option>
+                            <option value="Coahuila">Coahuila</option>
+                            <option value="Durango">Durango</option>
+                            <option value="Nuevo León">Nuevo León</option>
+                            <option value="Sinaloa">Sinaloa</option>
+                            <option value="Sonora">Sonora</option>
+                            <option value="Tamaulipas">Tamaulipas</option>
+                            <option value="Zacatecas">Zacatecas</option>
+                        </optgroup>
+                
+                        <optgroup label="Centro">
+                            <option value="Ciudad de México">Ciudad de México</option>
+                            <option value="Estado de México">Estado de México</option>
+                            <option value="Guanajuato">Guanajuato</option>
+                            <option value="Hidalgo">Hidalgo</option>
+                            <option value="Jalisco">Jalisco</option>
+                            <option value="Michoacán">Michoacán</option>
+                            <option value="Morelos">Morelos</option>
+                            <option value="Nayarit">Nayarit</option>
+                            <option value="Puebla">Puebla</option>
+                            <option value="Querétaro">Querétaro</option>
+                            <option value="San Luis Potosí">San Luis Potosí</option>
+                            <option value="Tlaxcala">Tlaxcala</option>
+                        </optgroup>
+                
+                        <optgroup label="Sur">
+                            <option value="Campeche">Campeche</option>
+                            <option value="Chiapas">Chiapas</option>
+                            <option value="Guerrero">Guerrero</option>
+                            <option value="Oaxaca">Oaxaca</option>
+                            <option value="Quintana Roo">Quintana Roo</option>
+                            <option value="Tabasco">Tabasco</option>
+                            <option value="Veracruz">Veracruz</option>
+                            <option value="Yucatán">Yucatán</option>
+                        </optgroup>
+                    </select>
+                </div>
+    
+                <div class="bloque_comentario">
+                    <label class="label_comentarios" for="comentarios">Comentarios:</label>
+                    <textarea class="input_comentarios" id="comentarios" name="comentarios" rows="4" cols="50" placeholder="Escribe tus comentarios aquí..."></textarea>
+                </div>
+    
+                
+                <button class="boton_enviar">Enviar</button>
+            </div>
+            
+        </form>
+    </footer>
 </body>
 </html>
