@@ -332,6 +332,7 @@ footer form:hover{
 
         font-size: 1.4vw;
 
+        resize: none;
         border-radius: 15px;
         :hover{
             opacity: 1;
