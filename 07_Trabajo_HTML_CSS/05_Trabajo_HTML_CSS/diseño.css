@@ -8,22 +8,27 @@ body{
     padding-right: 1%;
 }
 
-#caja1{
-
-    width: 30%;
+.contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+.carta{
+    flex: 1 1 calc(33.33% - 20px);
+    max-width: calc(33.33% - 20px);;
     border: 3px rgb(218, 218, 218);
-    border-style:outset;
+    border-style: outset;
     border-radius: 10%;
-    display: inline-block;
     background-color: rgb(255, 255, 255);
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
 
     main{
-        
         border: none;
+        width: 100%;
         img{
-            background-color: white;
-            display: inline-block;
             width: 100%;
             border-radius: 10% 10% 0 0;
         }
@@ -35,10 +40,9 @@ body{
     article{
         background-color: white;
         width: 100%;
-        height: 100%;
+        flex-grow: 1;
         padding: 0% 4% 0% 4%;
         h2{
-            display:inline-block;
             text-align: left;
             font-style: oblique;
             font-size: 2.5vw;
@@ -46,9 +50,7 @@ body{
         }
 
         p{
-            display: inline-block;
             font-style: italic;
-            width: 80%;
             font-size: 1.5vw;
             text-align: justify;
 
@@ -67,10 +69,10 @@ body{
     footer{
         background-color: white;
         text-align: center;
+        padding-bottom: 4%;
         button{
             border-style: hidden;
             border-radius: 10px;
-            display: inline-block;
             width: 40%;
             height: 3.5vw;
             background-color: rgb(0, 122, 255);
@@ -79,7 +81,7 @@ body{
             cursor: pointer;
             letter-spacing: 0.5px;
             font-weight: bold;
-            text-transform:capitalize;
+            text-transform: capitalize;
             transition: background-color 0.3s ease;
         }
 
@@ -87,11 +89,10 @@ body{
             border: 2px outset rgb(156, 156, 156);
             background-color: rgb(0, 100, 255);
         }
-        padding-bottom: 4%;
     }
     
 }
-#caja1:hover{
+.carta:hover{
     width: 30.1%;
     border-color: rgb(156, 156, 156);
 }
