@@ -12,5 +12,6 @@ HTML Y CSS:
 1. [Ejercicio #1 - Formato de texto, fuentes, fondos y border](/04_Trabajo_HTML/index.html)
 2. [Ejercicio #2 - Tarjeta](/05_Trabajo_HTML_CSS/index.html)
 3. [Ejercicio #3 - Header sticky](/06_Trabajo_HTML_CSS/index.html)
+4. [Ejercicio #5 - Sitio con tarjetas (Flex)](/07_Trabajo_HTML_CSS/index.html)
    
    
