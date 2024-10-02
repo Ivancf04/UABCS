@@ -13,5 +13,5 @@ HTML Y CSS:
 2. [Ejercicio #2 - Tarjeta](/05_Trabajo_HTML_CSS/index.html)
 3. [Ejercicio #3 - Header sticky](/06_Trabajo_HTML_CSS/index.html)
 4. [Ejercicio #5 - Sitio con tarjetas (Flex)](/07_Trabajo_HTML_CSS/05_Trabajo_HTML_CSS/index.html)
-5. [Ejercicio #6 - Variables y funciones)](/08_Trabajo_HTML_CSS/index.html)
-6. [Ejercicio #7 - CSS Grid)](/09_Trabajo_HTML_CSS/index.html)
+5. [Ejercicio #6 - Variables y funciones](/08_Trabajo_HTML_CSS/index.html)
+6. [Ejercicio #7 - CSS Grid](/09_Trabajo_HTML_CSS/index.html)
