@@ -276,6 +276,5 @@ header{
     
 }
 .carta:hover{
-    width: 30.1%;
     border-color: var(--color-terciario);
 }
