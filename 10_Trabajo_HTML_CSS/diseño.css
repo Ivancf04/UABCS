@@ -1,0 +1,318 @@
+
+body{
+    margin: 0;
+    display: grid;
+    grid-template-areas: 
+        "header header header"
+        "info info info";
+}
+
+:root{ 
+    --color_primario: white;
+    --color-secundario: rgb(250, 241, 230);
+    --color-terciario: rgb(156, 156, 156);
+    --font-size1: 3vw;
+}
+
+header{
+    grid-area: header;
+    
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-areas: 
+        "logo texto menu";
+    position: fixed;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgb(204, 204, 204);
+    align-items: center;
+    background-color: var(--color-secundario);
+    font-family: auto;
+    z-index: 100;
+    
+}
+
+#caja_logo{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    height: 6vw;
+    padding-left: 10px;
+
+    grid-column: 1;
+    grid-area: logo;
+    h1{
+        font-size: var(--font-size1);
+        margin: 0;
+    }
+    #logo{
+        
+        margin: 0;
+        width: 20%;
+    }
+}
+    
+#caja_texto{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 6vw;
+    text-align: center;
+    
+    grid-column: 2; 
+    grid-area: texto;   
+    #categorias{
+        width: 33%;
+        position: relative;
+        .op{
+            font-size: 2vw;
+            margin: 0;
+            cursor: pointer; 
+        }
+
+        
+    }
+
+    .op:hover{
+        color: gray;
+    }
+
+
+    #crear{
+        width: 33%;
+        position: relative;
+        .op{
+            font-size: 2vw;
+            margin: 0;
+            cursor: pointer;
+        }
+    }
+
+    #editar{
+        width: 33%;
+        position: relative;
+        .op{
+            font-size: 2vw;
+            margin: 0;
+            cursor: pointer;
+        }
+    }
+
+    :hover{
+        .op{
+            color: gray;
+        }
+        .menu{
+            display: block;
+        }
+    }
+       
+    .menu{
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 25%;
+        width: 50%;
+        background-color: var(--color_primario);
+        border-radius: 15px;
+        overflow: hidden;
+        border: 0.1px solid rgb(167, 164, 164);
+
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+
+        li{
+            color: black;
+            padding: 10px;
+            font-size: 1.5vw;
+            cursor: pointer;
+        }
+
+        
+    }
+
+    .menu li:hover{
+        background-color: rgb(202, 202, 202);
+    }
+}
+
+#caja_menu{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 6vw;
+    text-align: right;
+
+    grid-column: 3;
+    grid-area: menu;
+    #menu{
+        width: 12%;
+        height:auto;
+        cursor: pointer;
+        border-radius: 4px;
+        border: 1px;
+        border-style: solid;
+        border-color: rgb(90, 89, 89);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img{
+            width: 2.1vw;
+            height: auto;
+        }
+        
+    }
+
+    .input{
+        border-radius: 10px;
+        border-color: black;
+        border-style: solid;
+        border: 1px;
+        background-color: black;
+        color: white;
+        padding-left: 5%;
+        width: 70%;
+        line-height: 1.2em;
+        font-family: auto;
+        align-items: center;
+        justify-content: center;
+        font-size: 2vw;
+    }
+
+
+    .input::placeholder{
+        color: white;
+        font-size: 1.8vw;
+        letter-spacing: 1.8px;
+        font-family: auto;
+    }
+}
+
+#caja_menu:hover .input::placeholder{
+    color: rgb(172, 172, 172);
+    
+}
+
+
+
+.contenedor{
+    grid-area: info;
+
+    padding-top: 10%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 40px;
+    justify-items: center;
+}
+.carta{
+    flex: 1 1 calc(75% - 8px);
+    max-width: 200px;
+    min-width: calc(75% - 8px);
+    border: 3px rgb(218, 218, 218);
+    border-style: outset;
+    border-radius: 10%;
+    background-color: var(--color-primario);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+
+    main{
+        border: none;
+        width: 100%;
+        padding-bottom: 0;
+        img{
+            width: 100%;
+            border-radius: 10% 10% 0 0;
+        }
+        
+    }
+    
+
+    
+    article{
+        background-color: var(--color_primario);
+        width: 90%;
+        flex-grow: 1;
+        padding: 0% 4% 0% 4%;
+        h2{
+            text-align: left;
+            font-style: oblique;
+            font-size: 2.5vw;
+            font-weight: bold;
+        }
+
+        p{
+            font-style: italic;
+            font-size: 1.5vw;
+            text-align: justify;
+            
+                #parte_1{
+                    opacity: 0.6;
+                }
+                #parte_2{
+                    opacity: 0.3;
+                    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+                }
+        }
+        
+    }
+
+    footer{
+        background-color: white;
+        text-align: center;
+        padding-bottom: 4%;
+        button{
+            border-style: hidden;
+            border-radius: 10px;
+            width: 40%;
+            height: 3.5vw;
+            background-color: rgb(0, 122, 255);
+            color: white;
+            font-size: 1vw;
+            cursor: pointer;
+            letter-spacing: 0.5px;
+            font-weight: bold;
+            text-transform: capitalize;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover{
+            border: 2px outset var(--color-terciario);
+            background-color: rgb(0, 100, 255);
+        }
+    }
+    
+}
+.carta:hover{
+    border-color: var(--color-terciario);
+}
+
+@media (max-width: 768px) {
+
+    body{
+        grid-template-areas: 
+        "header header"
+        "info info";
+    }
+
+    .contenedor{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 500px) {
+    body{
+        grid-template-areas: 
+        "header"
+        "info";
+    }
+
+    .contenedor{
+        grid-template-columns: 1fr;
+    }
+}
