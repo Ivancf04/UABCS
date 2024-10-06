@@ -15,3 +15,4 @@ HTML Y CSS:
 4. [Ejercicio #5 - Sitio con tarjetas (Flex)](/07_Trabajo_HTML_CSS/05_Trabajo_HTML_CSS/index.html)
 5. [Ejercicio #6 - Variables y funciones](/08_Trabajo_HTML_CSS/index.html)
 6. [Ejercicio #7 - CSS Grid](/09_Trabajo_HTML_CSS/index.html)
+7. [Ejercicio #8 - Sitio responsivo](/10_Trabajo_HTML_CSS/index.html)
