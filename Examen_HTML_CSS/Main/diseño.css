@@ -1,0 +1,125 @@
+:root{
+    --color_primario: rgb(255, 255, 255);
+    --color_secundario: black;
+    --color_terciario: rgb(151, 142, 142);
+
+    /*--fonts: */
+
+    --font_size1: 3em;
+    --font_size2: 2em;
+    --font_size3: 1em;
+}
+
+body{
+    margin: 0;
+}
+
+/*Tamaño escritorio*/
+header{
+
+    background-color: var(--color_primario);
+
+    box-shadow: 0px 1px 0px rgb(0, 0, 0, 0.3);
+
+    display: grid;
+    grid-template-areas: 
+    "nombre texto";
+    grid-template-columns: 2fr 3fr;
+
+    align-items: center;
+
+    margin: 0;
+    padding-left: 1%;
+}
+
+#caja_nombre{
+    padding-left: 6%;
+
+    grid-column: 1;
+    grid-area: nombre;
+}
+
+#caja_texto{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 6vw;
+    text-align: center;
+    
+    grid-column: 2; 
+    grid-area: texto;  
+}
+
+
+#caja_nombre h1{
+    font-size: var(--font_size1);
+}
+
+#caja_texto h2{
+    font-size: var(--font_size2);
+}
+
+#base{
+    width: 33%;
+    position: relative;
+}
+
+#temporada{
+    width: 33%;
+    position: relative;
+}
+
+#paquetes{
+    width: 33%;
+    position: relative;
+}
+
+
+#caja_texto .opc{
+    cursor: pointer;
+}
+#caja_texto .opc:hover{
+    color: rgb(48, 48, 48);
+}
+
+#caja_texto .opcion:hover{
+    .opc{
+        color: gray;
+    }
+    .menu{
+        display: block;
+    }
+}
+
+.menu{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+    position: absolute;
+    top: 75%;
+    left: 25%;
+    width: 50%;
+    background-color: var(black);
+    border-radius: 15px;
+    overflow: hidden;
+    border: 0.1px solid rgb(167, 164, 164);
+
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+
+    li{
+        text-align: center;
+        color: black;
+        padding: 10px;
+        font-size: 1.5vw;
+        cursor: pointer;
+    }
+
+    
+}
+
+.menu li:hover{
+    background-color: rgb(202, 202, 202);
+}
+
