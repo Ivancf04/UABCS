@@ -221,10 +221,10 @@ header{
     #contenedor_texto{
         width: 95%;
         display: flex;
-        text-allign:center;
         justify-content: center;
-        allign-items: center;
+        align-items: center;
         allign-content: center;
+        text-allign: center;
         height: 400px;
         background-image: url(../imgs/perfume.webp);
         background-size: cover;
