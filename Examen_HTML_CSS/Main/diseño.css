@@ -222,7 +222,7 @@ header{
         width: 95%;
         display: flex;
         justify-content: center;
-        align-items:self-start;
+        align-items:center;
         height: 400px;
         background-image: url(../imgs/perfume.webp);
         background-size: cover;
