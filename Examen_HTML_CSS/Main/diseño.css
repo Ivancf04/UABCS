@@ -224,7 +224,7 @@ header{
         justify-content: center;
         align-items:self-start;
         height: 400px;
-        background-image: url(/Examen_HTML_CSS/imgs/perfume.webp);
+        background-image: url(../imgs/perfume.webp);
         background-size: cover;
         background-position: center;
 
@@ -375,7 +375,7 @@ footer{
     border-radius: 0 15px 15px 0;
     padding: 1%;
     align-items: center;
-    background-image: url(/Examen_HTML_CSS/imgs/message_10426419.png);
+    background-image: url(../imgs/message_10426419.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
