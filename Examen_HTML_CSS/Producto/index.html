@@ -5,13 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="diseño.css">
     <title>Parfum</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <header>
         <div id="caja_nombre">
             <!--Nombre del sitio-->
             <h1 class="titulo">Parfum</h1>
         </div>
+
+        <script>
+            document.getElementsByClassName('titulo')[0].addEventListener('click', function() {
+                window.location.href = '../Main/index.html';
+            });
+        </script>
 
         <div id="caja_texto">
             <!--Opciones de nav-->
@@ -80,11 +92,12 @@
             <h4>Notas de fondo: <br> <span class="notas">Pachuli, Madera de ambar, Vetiver</span></h4>
 
             <h4>Ingredientes: <span class="ingredientes">Pimienta rosa, Esencia de bergamota, Esencia de limón, Esencia de elemí, Esencia de geranio, Esencia de lavanda, Esencia de pachulí, Esencia de pimienta de Sichuan, Esencia de vetiver, Iso E Super, Hedione, Cetalox, Linalol, Dihidromircenol, Ambercore, Verdox, Pamplemousse de metilo, Magnolan, Coranol, Heliotropina, Ambrocenide, Cashmeran, Citronellol, Salicilato de cis-3-hexenilo, Coumarin, Peonile, Aldehído de mandarina, Precyclemone B.</span></h4>
+            
+            <div id="contenedor_boton">
+                <button id="boton">Agregar al carrito</button>
+            </div>
         </div>
-
-        <div id="contenedor_boton">
-            <button id="boton">Comprar</button>
-        </div>
+        
         
         
     </article>

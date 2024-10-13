@@ -5,15 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="diseño.css">
 
+    <title>Parfum</title>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
 
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
-
-    <title>Parfum</title>
 </head>
 <body>
     <header>
@@ -88,25 +88,62 @@
         </div>
     </div>
 
+    <article class="contenedor_carrusel">
+        <!--Contenedor carrusel-->
+        <div id="carrusel" class="carousel slide" data-bs-ride="carousel">
+            <!--Indicadores-->
+            <ul class="carousel-indicators">
+                <li data-bs-target="#carrusel" data-bs-slide-to="0" class="active"></li>
+                <li data-bs-target="#carrusel" data-bs-slide-to="1"></li>
+                <li data-bs-target="#carrusel" data-bs-slide-to="2"></li>
+            </ul>
+
+            <!--Posicion imagenes-->
+            <div class="carousel-inner">
+              <div class="carousel-item active bg_img1 bg" data-bs-interval="2000">
+                <div class="cont_carr_img">
+                    <img src="../imgs/Perfume1.png" class="imagen_carrusel" alt="img">    
+                </div>
+                <script>
+                    document.getElementsByClassName('bg')[0].addEventListener('click', function() {
+                        window.location.href = '../Producto/index.html';
+                    });
+                </script>
+                
+              </div>
+              <div class="carousel-item bg_img2 bg" data-bs-interval="2000">
+                <div class="cont_carr_img">
+                    <img src="../imgs/Perfume2.png" class="imagen_carrusel" alt="img">    
+                </div>
+              </div>
+              <div class="carousel-item bg_img3 bg" data-bs-interval="5000">
+                <div class="cont_carr_img">
+                    <img src="../imgs/Perfume3.png" class="imagen_carrusel" alt="img">    
+                </div>
+              </div>
+            </div>
+        </div>
+    </article>
+
     <main id="contenedor_principal">
         <div id="contenedor_productos">
             <div id="producto1" class="productos">
                 <div class="imagen">
                     <img src="../imgs/Perfume1.png" alt="img">
                 </div>
-    
+                
                 <div class="caracteristica">
                     <h3 class="nombres_productos">Aromatic star anise - MX$599</h3>
                     <h4 class="descripcion_productos">Terroso y fresco, Aromatic Star Anise expresa una masculinidad fuerte e inconfundible.</h4>
                 </div>
-
-                <div class="comprar">
-                    <a href="../Producto/index.html">
-                        <button class="boton_comprar">Comprar</button>
-                    </a>
-                    
-                </div>
             </div>
+
+            <script>
+                document.getElementById('producto1').addEventListener('click', function() {
+                    window.location.href = '../Producto/index.html';
+                });
+            </script>
+            
             <div id="producto2" class="productos">
                 <div class="imagen">
                     <img src="../imgs/Perfume2.png" alt="img">
@@ -115,9 +152,6 @@
                 <div class="caracteristica">
                     <h3 class="nombres_productos">Woody sandalwood - MX$999</h3>
                     <h4 class="descripcion_productos">Prémium y minimalista, Woody Sandalwood evoca el consuelo de un abrazo cálido, apelando una sensación fuerte de sensualidad a que ningún aroma comparable puede ser igual.</h4>
-                </div>
-                <div class="comprar">
-                    <button class="boton_comprar">Comprar</button>
                 </div>
             </div>
             <div id="producto3" class="productos">
@@ -129,9 +163,6 @@
                     <h3 class="nombres_productos">Aromatic ginger - MX$799</h3>
                     <h4 class="descripcion_productos">Fresca e intensa, Aromatic Ginger es una fragancia masculina que evoca la inmensidad de la vida al aire libre.</h4>
                 </div>
-                <div class="comprar">
-                    <button class="boton_comprar">Comprar</button>
-                </div>
             </div>
             <div id="producto4" class="productos">
                 <div class="imagen">
@@ -141,9 +172,6 @@
                 <div class="caracteristica">
                     <h3 class="nombres_productos">Musky oakmoss - MX$999</h3>
                     <h4 class="descripcion_productos">Fresco, refinado y agradablemente sorprendente, Musky Oakmoss tiene un toque británico que esconde una gran sofisticación bajo una apariencia informal.</h4>
-                </div>
-                <div class="comprar">
-                    <button class="boton_comprar">Comprar</button>
                 </div>
             </div>
             <div id="producto5" class="productos">
@@ -155,9 +183,6 @@
                     <h3 class="nombres_productos">Aromatic star anise - MX$599</h3>
                     <h4 class="descripcion_productos">Terroso y fresco, Aromatic Star Anise expresa una masculinidad fuerte e inconfundible.</h4>
                 </div>
-                <div class="comprar">
-                    <button class="boton_comprar">Comprar</button>
-                </div>
             </div>
             <div id="producto6" class="productos">
                 <div class="imagen">
@@ -167,9 +192,6 @@
                 <div class="caracteristica">
                     <h3 class="nombres_productos">Aromatic star anise - MX$599</h3>
                     <h4 class="descripcion_productos">Terroso y fresco, Aromatic Star Anise expresa una masculinidad fuerte e inconfundible.</h4>
-                </div>
-                <div class="comprar">
-                    <button class="boton_comprar">Comprar</button>
                 </div>
             </div>
             <div id="producto7" class="productos">
@@ -181,9 +203,6 @@
                     <h3 class="nombres_productos">Aromatic star anise - MX$599</h3>
                     <h4 class="descripcion_productos">Terroso y fresco, Aromatic Star Anise expresa una masculinidad fuerte e inconfundible.</h4>
                 </div>
-                <div class="comprar">
-                    <button class="boton_comprar">Comprar</button>
-                </div>
             </div>
             <div id="producto8" class="productos">
                 <div class="imagen">
@@ -193,9 +212,6 @@
                 <div class="caracteristica">
                     <h3 class="nombres_productos">Aromatic star anise - MX$599</h3>
                     <h4 class="descripcion_productos">Terroso y fresco, Aromatic Star Anise expresa una masculinidad fuerte e inconfundible.</h4>
-                </div>
-                <div class="comprar">
-                    <button class="boton_comprar">Comprar</button>
                 </div>
             </div>
             <div id="producto9" class="productos">
@@ -207,9 +223,6 @@
                     <h3 class="nombres_productos">Aromatic star anise - MX$599</h3>
                     <h4 class="descripcion_productos">Terroso y fresco, Aromatic Star Anise expresa una masculinidad fuerte e inconfundible.</h4>
                 </div>
-                <div class="comprar">
-                    <button class="boton_comprar">Comprar</button>
-                </div>
             </div>
             <div id="producto10" class="productos">
                 <div class="imagen">
@@ -219,9 +232,6 @@
                 <div class="caracteristica">
                     <h3 class="nombres_productos">Aromatic star anise - MX$599</h3>
                     <h4 class="descripcion_productos">Terroso y fresco, Aromatic Star Anise expresa una masculinidad fuerte e inconfundible.</h4>
-                </div>
-                <div class="comprar">
-                    <button class="boton_comprar">Comprar</button>
                 </div>
             </div>
             <div id="producto11" class="productos">
@@ -233,9 +243,6 @@
                     <h3 class="nombres_productos">Aromatic star anise - MX$599</h3>
                     <h4 class="descripcion_productos">Terroso y fresco, Aromatic Star Anise expresa una masculinidad fuerte e inconfundible.</h4>
                 </div>
-                <div class="comprar">
-                    <button class="boton_comprar">Comprar</button>
-                </div>
             </div>
             <div id="producto12" class="productos">
                 <div class="imagen">
@@ -245,9 +252,6 @@
                 <div class="caracteristica">
                     <h3 class="nombres_productos">Aromatic star anise - MX$599</h3>
                     <h4 class="descripcion_productos">Terroso y fresco, Aromatic Star Anise expresa una masculinidad fuerte e inconfundible.</h4>
-                </div>
-                <div class="comprar">
-                    <button class="boton_comprar">Comprar</button>
                 </div>
             </div>
         </div>
@@ -302,7 +306,7 @@
 
     
     
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
 </body>
 </html>

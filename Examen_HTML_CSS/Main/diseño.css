@@ -13,8 +13,6 @@
     --font_style: 'PlayFair Display', Times New Roman;
 }
 
-
-
 body{
     margin: 0;
     padding: 0;
@@ -23,6 +21,7 @@ body{
     "header"
     "aviso"
     "img"
+    "carrusel"
     "main"
     "footer";
 
@@ -53,6 +52,7 @@ header{
     margin: 0;
 
     box-shadow: 0px 2px 0px rgb(0, 0, 0, 0.1);
+    font-weight: 500;
 }
 
 #caja_nombre{
@@ -267,7 +267,64 @@ header{
     }
     
   }
-  
+.contenedor_carrusel{
+    padding: 4% 1% 0 1%;
+    grid-area: carrusel;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+} 
+
+.carousel-indicators{
+    list-style: none;
+}
+
+#carrusel{
+    border-radius: 15px;
+    width: 100%;
+}
+
+.carousel-item{
+    border-radius: 15px;
+    justify-items: center;
+}
+
+.cont_carr_img{
+    width: 100%;
+    backdrop-filter: blur(6px);
+    border-radius: 15px;
+}
+
+.imagen_carrusel {
+    margin: 1%;
+    width: 35%;
+    height: auto;
+
+}
+
+.bg{
+    cursor: pointer;
+    border-radius: 15px;
+    background-size: cover;
+    background-position: center;
+}
+
+.bg_img1 {
+    background-image: url('../imgs/bosque.jfif');
+    
+  }
+
+.bg_img2{
+    background-image: url(../imgs/calido.jpg);
+}
+
+.bg_img3{
+    background-image: url(../imgs/madera.jfif);
+}
+
+
 
 
 #contenedor_principal{
@@ -287,6 +344,7 @@ header{
 #contenedor_productos{
     grid-area: producto;
     width: 100%;
+    margin: 1%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 40px;
@@ -301,6 +359,9 @@ header{
 
     border-radius: 15px;
     border: 2px solid rgb(177, 177, 177, 0.5);
+    justify-content: center;
+
+    cursor: pointer;
 }
 
 .productos:hover{
@@ -315,6 +376,7 @@ header{
 #producto1 .imagen{
     background-image: url(../imgs/bosque.jfif);
 }
+
 
 #producto2 .imagen{
     background-image: url(../imgs/calido.jpg);
@@ -392,24 +454,6 @@ header{
     color: gray;
 }
 
-.comprar{
-
-    display: flex;
-    padding: 3%;
-    justify-content: center;
-}
-
-.boton_comprar{
-    border-radius: 15px;
-    padding: 2%;
-
-    font-size: var(--font_size3);
-}
-
-.boton_comprar:hover{
-    cursor: pointer;
-    background-color: var(--color_secundario);
-}
 
 .nav{
     padding-top: 6%;
@@ -468,7 +512,7 @@ footer{
     grid-template-columns: 1fr 1fr 1fr;
     align-items:top;
     justify-items: center;
-    height: 90%;
+    height: 78%;
 
 
     padding: 1% 1% 8% 10%;
@@ -484,18 +528,22 @@ footer{
 }
 .caja {
     display: flex;
-    width: 20%;
+    width: 30%;
     border: 1px solid black;
     border-radius: 15px;
     padding: 6%;
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    height: 15%;
+    height: 30%;
+}
+
+.caja:hover{
+    background-color: var(--color_primario);
 }
 
 .caja img {
-    width: 80%;
+    width: 100%;
 }
 
 .caja #facebook{
@@ -514,6 +562,7 @@ footer{
     display: flex;
     flex-direction: column;
     align-items: left;
+    height: 85%;
     h3{
         font-size: var(--font_size1);
         font-family: var(--font_style);
@@ -545,7 +594,7 @@ footer{
     display: grid;
     justify-content: center;
     align-items: top;
-    height: 100%;
+    height: 84%;
     padding: 5% 10% 8% 10%;
 
 }
@@ -561,23 +610,25 @@ footer{
 
 #enviar_correo{
     width: 100%;
+    height: 60%;
     display: flex;
-    height: 30%;
+    flex-direction: row;
 }
 
 #correos #input_correo{
     width: 80%;
-    height: 48%;
     border-right: 0;
     border-radius: 15px 0 0  15px;
-    padding: 2% 0 2% 2%;
+    padding: 1% 0 1% 1%;
+
+    font-size: var(--font_size2);
 }
 
-#correos button{
+#enviar_correo button{
+    background-color: var(--color_primario);
     display: flex;
     width: 20%;
     border-radius: 0 15px 15px 0;
-    height: 100%;
     padding: 1%;
     align-items: center;
     background-image: url(../imgs/message_10426419.png);
@@ -588,6 +639,10 @@ footer{
     cursor: pointer;
 }
 
+#enviar_correo button:hover{
+    background-color: var(--color_secundario);
+}
+
 
 @media (max-width: 1800px) {
     #contenedor_productos{
@@ -595,7 +650,7 @@ footer{
     }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1400px) {
 
     header{
         grid-template-columns: 5fr 1fr;
@@ -618,7 +673,7 @@ footer{
     }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
 
     header{
         grid-template-columns: 5fr 1fr 1fr;
