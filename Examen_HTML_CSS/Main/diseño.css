@@ -83,6 +83,7 @@ header{
 
 
 #caja_nombre h1{
+    font-weight: normal;
     margin: 0;
     padding: 0;
     font-family: var(--font_style);
@@ -91,6 +92,7 @@ header{
 }
 
 #caja_texto h2{
+    font-weight: normal;
     margin: 0;
     padding: 0;
     font-family: var(--font_style);
