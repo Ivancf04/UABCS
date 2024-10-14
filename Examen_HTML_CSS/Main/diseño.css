@@ -275,6 +275,7 @@ header{
     display: flex;
     flex-direction: row;
     width: 100%;
+    min-heigth: 300px;
     justify-content: center;
     text-align: center;
 } 
