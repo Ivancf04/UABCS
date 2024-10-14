@@ -651,6 +651,7 @@ footer{
 @media (max-width: 1800px) {
     #contenedor_productos{
         grid-template-columns: repeat(3, 1fr);
+        
     }
 }
 
@@ -713,6 +714,7 @@ footer{
     #contenedor_productos{
         grid-template-columns: repeat(1, 1fr);
         margin: 2%;
+        padding : 2%;
     }
 
 }
