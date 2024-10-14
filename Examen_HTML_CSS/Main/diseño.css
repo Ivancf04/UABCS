@@ -347,8 +347,9 @@ header{
 
 #contenedor_productos{
     grid-area: producto;
-    width: 100%;
+    width: 95%;
     margin: 1%;
+    padding: 1%;    
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 40px;
