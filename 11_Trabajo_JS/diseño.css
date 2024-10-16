@@ -1,0 +1,80 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+}
+
+#bloque_calculadora{
+    display: flex;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+}
+
+#bloque_contenido{
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    padding: 2%;
+    background-color: rgb(136, 136, 136);
+    border: 1px solid black;
+    border-radius: 15px;
+}
+
+#contenido{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding-bottom: 2%;
+}
+
+#boton_borrar{
+    width: 30%;
+    margin: 0;
+}
+
+#pantalla{
+    background-color: rgb(238, 238, 238);
+    border: 1px solid rgb(53, 53, 53);
+    border-radius: 15px;
+    margin: 0;
+    width: 70%;
+    align-content: center;
+    padding: 2%;
+    text-align: right;
+}
+#borrar{
+    background-color: red;
+}
+
+#botones{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 1%;
+    
+    gap: 10px;
+    justify-items: center;
+}
+
+.botonB{
+    border-radius: 15px;
+    width: 50%;
+    aspect-ratio: 1 / 1;
+    border: 1px outset black;
+}
+
+.botonI{
+    border-radius: 15px;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    border: 1px outset black;
+}
+
+#punto{
+    font-size: x-large;
+}
+
+.boton:hover{
+    background-color: rgb(172, 172, 172);
+}
