@@ -31,7 +31,7 @@ function calcular(num1, num2, operacion) {
         alert("Operación inválida.");
         return;
     }
-    document.getelementid('resultado').Innertext += resultado;
+    document.getElementId('resultado').innerText += resultado;
     console.log("El resultado es:", resultado);
   }
   let num1 = prompt("Ingresa el primer numero: ");
