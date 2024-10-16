@@ -31,10 +31,9 @@ function calcular(num1, num2, operacion) {
         alert("Operación inválida.");
         return;
     }
-  
+    document.getElementById("resultado").textContent += resultado;
     console.log("El resultado es:", resultado);
   }
-
   let num1 = prompt("Ingresa el primer numero: ");
   let num2 = prompt("Ingresa el segundo numero: ");
   let operacion = prompt("Ingresa la operacion(+ | - | * | /): ");

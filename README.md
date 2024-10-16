@@ -18,3 +18,6 @@ HTML Y CSS:
 7. [Ejercicio #8 - Sitio responsivo](/10_Trabajo_HTML_CSS/index.html)
 
 8. [Ejercicio #9 - Sitio Parfum](/Examen_HTML_CSS/Main/index.html)
+
+JS:
+1. [Ejercicio #10 - Calculadora en consola](01_Trabajo_JS/index.html)
