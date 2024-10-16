@@ -35,9 +35,8 @@ function calcular(num1, num2, operacion) {
     console.log("El resultado es:", resultado);
   }
 
-    calcular(5, 3, "+");
-    calcular(10, 2, "/");
-    calcular("hola", 2, "*");
-    calcular(10, 2, "*");
-    calcular(5, 0, "/");
-    calcular(5, 2, "/");
+  let num1 = prompt("Ingresa el primer numero: ");
+  let num2 = prompt("Ingresa el segundo numero: ");
+  let operacion = prompt("Ingresa la operacion(+ | - | * | /): ");
+
+  calcular(num1, num2, operacion);
