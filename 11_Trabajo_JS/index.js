@@ -1,66 +1,41 @@
-let valor = "";
-const botones = document.querySelectorAll('.boton');
-
-botones.forEach(boton => {
-    boton.addEventListener('click', function() {
-
-        if(this.innerText != "C" && this.innerText != "="){
-            if(isNaN(this.innerText)){
-                if(this.innerText != document.getElementById('pantalla').innerText.charAt(document.getElementById('pantalla').innerText.length - 1)){
-                    valor += this.innerText;
-                    document.getElementById('pantalla').innerText = valor;
-                }
-                else{
-                    alert('no se puede agregar seguido este valor');
-                }
-            }
-
-            if(this.innerText == "="){
-                let cadena = "";
-                let valor2 = "";
-
-                cadena = document.getElementById('pantalla').innerText;
-
-                for(i=0; i < cadena.length;i++){
-                    if(isNaN(cadena.charAt(i))){
-                        for(j=i;j < cadena.length;j++){
-                            valor2 += cadena.charAt(i);
-                        }
-                        switch(cadena.charAt(i)){
-                            case '+':
-                                cadena = parseFloat(valor) + parseFloat(valor2);
-                                break;
-
-                            case '-':
-                                cadena = parseFloat(valor) - parseFloat(valor2);
-                                break;
-                            case 'x':
-                                cadena = parseFloat(valor) * parseFloat(valor2);
-                                break;
-                            case '/':
-                                cadena = parseFloat(valor) / parseFloat(valor2);
-                                break;
-
-                        } 
-                        document.getElementById('pantalla').innerText = cadena;
-                        break;
-                    }
-                    else{
-                        valor += cadena.charAt(i);
-                    }
-                }
-            }
-
-            else{
-                valor += this.innerText;
-                document.getElementById('pantalla').innerText = valor;
-            }
+function calcular(num1, num2, operacion) {
+    num1 = parseFloat(num1);
+    num2 = parseFloat(num2);
+  
+    if (isNaN(num1) || isNaN(num2)) {
+      alert("Por favor, ingresa solo números.");
+      return;
+    }
+  
+    let resultado;
+    switch (operacion) {
+      case "+":
+        resultado = num1 + num2;
+        break;
+      case "-":
+        resultado = num1 - num2;
+        break;
+      case "*":
+        resultado = num1 * num2;
+        break;   
+  
+      case "/":
+        if (num2 === 0) {
+          alert("No puedes dividir entre cero.");
+          return;
+        } else {
+          resultado = num1 / num2;
         }
-        
-        else{
-            valor = "";
-            document.getElementById('pantalla').innerText = '0';
-        }
-        
-    });
-});
+        break;
+      default:
+        alert("Operación inválida.");
+        return;
+    }
+    document.getElementById("resultado").textContent += resultado;
+    console.log("El resultado es:", resultado);
+  }
+  let num1 = prompt("Ingresa el primer numero: ");
+  let num2 = prompt("Ingresa el segundo numero: ");
+  let operacion = prompt("Ingresa la operacion(+ | - | * | /): ");
+
+  calcular(num1, num2, operacion);
