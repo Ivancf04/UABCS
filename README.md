@@ -20,4 +20,7 @@ HTML Y CSS:
 8. [Ejercicio #9 - Sitio Parfum](/Examen_HTML_CSS/Main/index.html)
 
 JS:
-1. [Ejercicio #10 - Calculadora en consola](01_Trabajo_JS/index.html)
+1. [Ejercicio #10 - Calculadora en consola](11_Trabajo_JS/index.html)
+
+HTML, CSS Y JS:
+1. [Ejercicio #11 - Manipulación de estilos](12_Trabajo_HTML_CSS_JS/index.html)
