@@ -1,0 +1,61 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+
+    margin: auto;
+    padding: 2%;
+    border: 1px solid black;
+    border-radius: 15px;
+
+    background-color: rgb(173, 173, 173);
+}
+
+#cont_input{
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 15px;
+    text-align: right;
+    padding: 2%;
+    background-color: white;
+}
+#cont_botones{
+    margin-top: 4%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.boton{
+    border-radius: 15px;
+    font-size: 1em;
+    aspect-ratio: 1/1;
+    background-color: rgb(227, 226, 226);
+    cursor: pointer;
+}
+
+.boton:hover{
+    background-color: rgb(171, 171, 171);
+}
+
+#historial{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 15px;
+    padding: 2%;
+    text-align: center;
+
+}
+
+#historial_texto{
+    color: gray;
+    font-weight: normal;
+}
