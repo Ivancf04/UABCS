@@ -45,13 +45,28 @@ body{
     background-color: rgb(171, 171, 171);
 }
 
+#contenedor_historial{
+    text-align: center;
+    padding-top: 0%;
+}
+
+#historial_h1{
+    background-color: white;
+    border-radius: 15px 15px 0 0;
+    margin-bottom: 0;
+}
+
 #historial{
     display: flex;
     flex-direction: column;
     background-color: white;
-    border-radius: 15px;
+    border-radius: 0 0 15px 15px;
     padding: 2%;
     text-align: center;
+    max-height: 190px;
+
+    overflow: hidden;
+    overflow-y: auto;
 
 }
 
