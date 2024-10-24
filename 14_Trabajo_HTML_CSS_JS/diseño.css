@@ -17,30 +17,64 @@ body{
 
 .contenedor{
     padding: 1%;
-
+}
+#lista{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    max-height: 230px;
+    overflow-y: scroll;
+    scrollbar-width: none;
 }
 
-#lista{
-    list-style: none;
+.tarea{
+    border-bottom: 1px solid gray;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 1%;
+    justify-content: space-around;
+    align-content: center;
+}
+
+.tex_tareas{
+    border: 0;
+    width: 70%;
+}
+
+#eliminar{
+    background-color: rgb(202, 24, 24);
+    color: white;
+}
+
+.subrayado{
+    text-decoration: line-through;
 }
 
 .diseño{
     border-radius: 15px;
     border-color: rgba(0, 0, 0, 0.432);
+    height: 40px;
+    box-sizing: border-box;
+}
+
+#cont_inp{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 0 0 1% 0;
 }
 
 #input{
     width: 70%;
-    padding: 1%;
-    aspect-ratio: 1/0.05;
+    padding: 0 0 0 2%;
 }
 #agregar{
     background-color: #0066ff;
     color: white;
+    margin-left: 5%;
 }
 .boton{
     width: 20%;
-    aspect-ratio: 1/0.3;
     cursor: pointer;
 }
 
