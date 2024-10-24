@@ -24,3 +24,4 @@ JS:
 HTML, CSS Y JS:
 1. [Ejercicio #11 - Manipulación de estilos](12_Trabajo_HTML_CSS_JS/index.html)
 2. [Ejercicio #12 - Calculadora visual](13_Trabajo_HTML_CSS_JS/index.html)
+3. [Ejercicio #13 - Lista de tareas](14_Trabajo_HTML_CSS_JS/index.html)
