@@ -1,0 +1,58 @@
+body{
+    text-align: center;
+    background-color: rgb(250, 217, 217);
+    margin: 0;
+    padding: 0;
+    border-radius: 8px;
+}
+#contenedor{
+    display: flex;
+    flex-direction: column;
+    margin: 1%;
+    border: 4px rgb(185, 185, 185, 0.15) solid;
+    border-radius: 12px;
+    aspect-ratio: 1/1;
+    padding: 1%;
+}
+#catGrid{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(4, 1fr);
+    aspect-ratio: 1/1;
+    gap: 40px;
+}
+
+#catCard{
+    display: flex;
+    flex-direction: column;
+    border: 2px solid rgb(185, 185, 185, 0.40);
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 12px;
+    width: 15%;
+    padding: 1%;
+    aspect-ratio: 1/2;
+    max-height: 600px;
+}
+
+#catCard:hover{
+    transform: scale(1.005);
+}
+
+#botones{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.boton{
+    background-color: rgb(255, 255, 255);
+    border: 1px rgb(255, 255, 255, 0);
+    border-radius: 12px;
+    width: 10%;
+    aspect-ratio: 1/0.3;
+    cursor: pointer;
+}
+.boton:hover{
+    background-color: rgba(255, 255, 255, 0.8);
+}
