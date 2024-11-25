@@ -378,55 +378,6 @@ header{
     min-height: 400px;
 }
 
-#producto1 .imagen{
-    background-image: url(../imgs/bosque.jfif);
-}
-
-
-#producto2 .imagen{
-    background-image: url(../imgs/calido.jpg);
-}
-
-#producto3 .imagen{
-    background-image: url(../imgs/madera.jfif);
-}
-
-#producto4 .imagen{
-    background-image: url(../imgs/roble.jpg);
-}
-
-#producto5 .imagen{
-    background-image: url(../imgs/bosque.jfif);
-}
-
-#producto6 .imagen{
-    background-image: url(../imgs/calido.jpg);
-}
-
-#producto7 .imagen{
-    background-image: url(../imgs/madera.jfif);
-}
-
-#producto8 .imagen{
-    background-image: url(../imgs/roble.jpg);
-}
-
-#producto9 .imagen{
-    background-image: url(../imgs/bosque.jfif);
-}
-
-#producto10 .imagen{
-    background-image: url(../imgs/calido.jpg);
-}
-
-#producto11 .imagen{
-    background-image: url(../imgs/madera.jfif);
-}
-
-#producto12 .imagen{
-    background-image: url(../imgs/roble.jpg);
-}
-
 .imagen{
     border-radius:15px 15px 0 0;
     background-size: cover;
@@ -455,6 +406,7 @@ header{
     font-family: var(--font_style);
     margin: 0;
     height: 40px;
+    text-align: center;
 
     color: gray;
 }

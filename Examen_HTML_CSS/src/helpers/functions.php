@@ -9,7 +9,7 @@ function getProducts()
     $pdo = getPDO();
 
     try{
-        $sql = "SELECT name, abbreviation FROM products";
+        $sql = "SELECT name,price,url,descripcion FROM products";
         $stmt = $pdo->query($sql);
         $products = $stmt->fetchAll(PDO::FETCH_ASSOC);
             return $products;

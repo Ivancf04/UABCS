@@ -5,13 +5,13 @@
             <div id="redes_sociales">
                 <h2>Parfum</h2>
                 <div class="caja">
-                    <img id="facebook" src="../imgs/facebook.png" alt="img">
+                    <img id="facebook" src="<?=ASSETS_URL?>/imgs/facebook.png" alt="img">
                 </div>
                 <div class="caja">
-                    <img id="instagram" src= "../imgs/logotipo-de-instagram.png" alt="img">
+                    <img id="instagram" src= "<?=ASSETS_URL?>/imgs/logotipo-de-instagram.png" alt="img">
                 </div>
                 <div class="caja">
-                    <img id="x" src="../imgs/gorjeo.png" alt="img">
+                    <img id="x" src="<?=ASSETS_URL?>/imgs/gorjeo.png" alt="img">
                 </div>
                 
                 

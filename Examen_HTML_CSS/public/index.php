@@ -67,7 +67,7 @@
             <?php foreach($products as $product):?>
             <div class="productos">
                 <div class="imagen">
-                    <img src="<?=ASSETS_URL?><?=$product['url']?>" alt="img">
+                    <img src="<?=ASSETS_URL?>/<?=$product['url']?>" alt="img">
                 </div>
                 
                 <div class="caracteristica">
