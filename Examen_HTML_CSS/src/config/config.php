@@ -9,5 +9,5 @@ return [
         'user' => 'root',
         'password' => ''
     ]
-];
+    ];
 ?>
