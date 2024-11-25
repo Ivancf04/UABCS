@@ -65,7 +65,7 @@
     <main id="contenedor_principal">
         <div id="contenedor_productos">
             <?php foreach($products as $product):?>
-            <div class="productos">
+            <div id="<?=$product['id']?>" class="productos">
                 <div class="imagen">
                     <img src="<?=ASSETS_URL?>/<?=$product['url']?>" alt="img">
                 </div>
