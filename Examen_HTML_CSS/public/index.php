@@ -64,14 +64,15 @@
 
     <main id="contenedor_principal">
         <div id="contenedor_productos">
-            <div id="producto1" class="productos">
+            <?php foreach($products as $product):?>
+            <div class="productos">
                 <div class="imagen">
-                    <img src="<?=ASSETS_URL?>/imgs/Perfume1.png" alt="img">
+                    <img src="<?=ASSETS_URL?><?=$product['url']?>" alt="img">
                 </div>
                 
                 <div class="caracteristica">
-                    <h3 class="nombres_productos">Aromatic star anise - MX$599</h3>
-                    <h4 class="descripcion_productos">Terroso y fresco, Aromatic Star Anise expresa una masculinidad fuerte e inconfundible.</h4>
+                    <h3 class="nombres_productos"><?=$product['name']?> - <?=$product['price']?></h3>
+                    <h4 class="descripcion_productos"><?=$product['descripcion']?></h4>
                 </div>
             </div>
         </div>
