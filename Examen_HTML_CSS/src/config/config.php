@@ -7,7 +7,7 @@ return [
         'host' => '192.168.0.196',
         'name' => 'parfum',
         'user' => 'root',
-        'password' => 'root'
+        'password' => ''
     ]
 ];
 ?>
