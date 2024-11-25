@@ -75,6 +75,7 @@
                     <h4 class="descripcion_productos"><?=$product['descripcion']?></h4>
                 </div>
             </div>
+            <?php endforeach; ?>
         </div>
 
         <div class="nav">
