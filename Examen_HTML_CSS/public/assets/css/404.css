@@ -1,0 +1,59 @@
+:root{
+    --color_primario: rgb(255, 255, 255);
+    --color_secundario: rgb(233, 233, 233,0.4);
+    --color_terciario: rgb(226, 213, 188);
+
+    /*--fonts: */
+
+    --font_size1: 3vw;
+    --font_size2: 1.8vw;
+    --font_size3: 1.2em;
+    --font_size4: 0.8em;
+    --font_size5: 1.6vw;
+    --font_size6: 0.6em;
+
+}
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(../imgs/fondobody.jpg);
+    background-position: center;
+    background-size: cover;
+    gap: 40px;
+}
+
+
+.texto{
+    text-align: center;
+}
+
+#titulo{
+    text-align: center;
+}
+
+
+#img{
+    border-bottom: 1px black solid;
+    width: 10%;
+    border-radius: 2px;
+}
+
+#cont2{
+    background-color: rgba(255, 255, 255, 0.265);
+    align-content: center;
+    text-align: right;
+    border: 2px solid rgb(167, 164, 164);
+    border-radius: 15px;
+    width: 80%;
+    aspect-ratio: 1/0.6;
+    padding: 0;
+}
+
+#contI{
+    width: 100%;
+    text-align: right;
+    border-bottom: 1px black solid;
+}
